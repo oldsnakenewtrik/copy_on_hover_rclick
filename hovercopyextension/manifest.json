@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Copy on Hover and Right-Click",
+    "version": "1.0",
+    "description": "Enables copy-paste functionality when hovering over an element and right-clicking, with hotkey to suspend",
+    "permissions": ["activeTab", "storage"],
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "commands": {
+      "toggle-extension": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+Space",
+          "mac": "Command+Shift+Space"
+        },
+        "description": "Toggle extension on/off"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
