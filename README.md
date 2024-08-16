@@ -41,8 +41,3 @@ This Chrome extension enables an efficient copy-paste functionality, allowing us
 ## Contributing
 
 Contributions to improve the extension are welcome. Please feel free to submit pull requests or open issues to suggest improvements or report bugs.
-
-## License
-
-[MIT License](LICENSE)
-
